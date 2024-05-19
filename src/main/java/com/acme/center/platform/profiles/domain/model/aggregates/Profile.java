@@ -3,7 +3,7 @@ package com.acme.center.platform.profiles.domain.model.aggregates;
 import com.acme.center.platform.profiles.domain.model.valueobjects.EmailAddress;
 import com.acme.center.platform.profiles.domain.model.valueobjects.PersonName;
 import com.acme.center.platform.profiles.domain.model.valueobjects.StreetAddress;
-import com.acme.center.platform.shared.domain.model.entities.AuditableAbstractAggregateRoot;
+import com.acme.center.platform.shared.domain.model.aggregates.AuditableAbstractAggregateRoot;
 import jakarta.persistence.*;
 
 @Entity
