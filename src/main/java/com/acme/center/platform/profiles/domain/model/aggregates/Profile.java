@@ -1,5 +1,6 @@
 package com.acme.center.platform.profiles.domain.model.aggregates;
 
+import com.acme.center.platform.profiles.domain.model.commands.CreateProfileCommand;
 import com.acme.center.platform.profiles.domain.model.valueobjects.EmailAddress;
 import com.acme.center.platform.profiles.domain.model.valueobjects.PersonName;
 import com.acme.center.platform.profiles.domain.model.valueobjects.StreetAddress;
@@ -29,6 +30,12 @@ public class Profile extends AuditableAbstractAggregateRoot<Profile> {
         this.name = new PersonName(firstName, lastName);
         this.email = new EmailAddress(email);
         this.address = new StreetAddress(street, number, city, postalCode, country);
+    }
+
+    public Profile(CreateProfileCommand command) {
+        this.name = new PersonName(command.firstName(), command.lastName());
+        this.email = new EmailAddress(command.email());
+        this.address = new StreetAddress(command.street(), command.number(), command.city(), command.postalCode(), command.country());
     }
 
     public Profile() {
