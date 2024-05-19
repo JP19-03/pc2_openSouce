@@ -1,7 +1,7 @@
 # ACME Learning Center Platform
 
 ## Summary
-ACME Learning Center Platform, illustrating development with Java, Spring Boot Framework, and Spring Data JPA on MySQL Database.
+ACME Learning Center Platform, illustrating development with Java, Spring Boot Framework, and Spring Data JPA on MySQL Database. It also illustrates open-api documentation configuration and integration with Swagger UI. 
 
 ### Reference Documentation
 
