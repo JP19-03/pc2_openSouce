@@ -15,6 +15,8 @@ public class Profile extends AuditableAbstractAggregateRoot<Profile> {
     private PersonName name;
 
     @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name = "address", column = @Column(name = "email_address"))})
     EmailAddress email;
 
     @Embedded

@@ -24,7 +24,7 @@ public class ProfileCommandServiceImpl implements ProfileCommandService {
             throw new IllegalArgumentException("Profile with email " + command.email() + " already exists");
         });
         var profile = new Profile(command);
-        var createdProfile = profileRepository.save(profile);
-        return Optional.of(createdProfile);
+        profileRepository.save(profile);
+        return Optional.of(profile);
     }
 }
