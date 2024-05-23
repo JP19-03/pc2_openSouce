@@ -1,4 +1,4 @@
-package com.acme.center.platform.profiles.applicatiion.internal.commandservices;
+package com.acme.center.platform.profiles.application.internal.commandservices;
 
 import com.acme.center.platform.profiles.domain.model.aggregates.Profile;
 import com.acme.center.platform.profiles.domain.model.commands.CreateProfileCommand;

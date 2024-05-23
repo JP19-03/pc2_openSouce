@@ -1,4 +1,4 @@
-package com.acme.center.platform.profiles.applicatiion.internal.queryservices;
+package com.acme.center.platform.profiles.application.internal.queryservices;
 
 import com.acme.center.platform.profiles.domain.model.aggregates.Profile;
 import com.acme.center.platform.profiles.domain.model.queries.GetAllProfilesQuery;
