@@ -34,6 +34,8 @@ The Learning Context is responsible for managing the courses, course learning pa
 
 - Create a Course.
 - Get a Course by id.
+- Update a Course information.
+- Delete a Course.
 - Get all Courses.
 - Add an existing Tutorial to Course Learning Path.
 - Register a new Student with implicit profile creation.
