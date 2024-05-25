@@ -24,7 +24,7 @@ The Profiles Context is responsible for managing the profiles of the users. It i
 - Get a profile by id.
 - Get all profiles.
 
-This context includes also an anti-corruption layer to communicate with the Learning Context. The anticorruption layer is responsible for managing the communication between the Profiles Context and the Learning Context. It offers the following capabilities to other bounded contexts:
+This context includes also an anti-corruption layer to communicate with the Learning Context. The anti-corruption layer is responsible for managing the communication between the Profiles Context and the Learning Context. It offers the following capabilities to other bounded contexts:
 - Create a new Profile, returning ID of the created Profile on success.
 - Get a Profile by Email, returning the associated Profile ID on success.
 
@@ -43,7 +43,7 @@ The Learning Context is responsible for managing the courses, course learning pa
 - Reject a Student Enrollment Request in a Course.
 - Get all Enrollments for a Course.
 
-This context includes also an anti-corruption layer to communicate with the Profiles Context. The anticorruption layer is responsible for managing the communication between the Learning Context and the Profiles Context. It consumes the capabilities offered by the Profiles Context to:
+This context includes also an anti-corruption layer to communicate with the Profiles Context. The anti-corruption layer is responsible for managing the communication between the Learning Context and the Profiles Context. It consumes the capabilities offered by the Profiles Context to:
 
 - Create the Profile of a new Student.
 - Get the Profile ID of a Student by Email.
