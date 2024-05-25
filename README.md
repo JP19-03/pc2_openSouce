@@ -48,6 +48,8 @@ This context includes also an anti-corruption layer to communicate with the Prof
 - Create the Profile of a new Student.
 - Get the Profile ID of a Student by Email.
 
+Tutorial is a concept that represents a learning resource. It is used to build the learning path of a course. The Tutorial aggregate and its publishing lifecycle are part of the Publishing bounded context, which is beyond the scope of this platform version.
+
 ### Reference Documentation
 
 For further reference, please consider the following sections:
