@@ -3,6 +3,51 @@
 ## Summary
 ACME Learning Center Platform, illustrating development with Java, Spring Boot Framework, and Spring Data JPA on MySQL Database. It also illustrates open-api documentation configuration and integration with Swagger UI. 
 
+## Features
+- RESTful API
+- OpenAPI Documentation
+- Swagger UI
+- Spring Boot Framework
+- Spring Data JPA
+- Validation
+- MySQL Database
+- Domain-Driven Design
+
+## Bounded Contexts
+This version of ACME Learning Center Platform is divided into two bounded contexts: Profiles, and Learning.
+
+### Profiles Context
+
+The Profiles Context is responsible for managing the profiles of the users. It includes the following features:
+
+- Create a new profile.
+- Get a profile by id.
+- Get all profiles.
+
+This context includes also an anti-corruption layer to communicate with the Learning Context. The anticorruption layer is responsible for managing the communication between the Profiles Context and the Learning Context. It offers the following capabilities to other bounded contexts:
+- Create a new Profile, returning ID of the created Profile on success.
+- Get a Profile by Email, returning the associated Profile ID on success.
+
+### Learning Context
+
+The Learning Context is responsible for managing the courses, course learning paths and course enrollments. Its features include:
+
+- Create a Course.
+- Get a Course by id.
+- Get all Courses.
+- Add an existing Tutorial to Course Learning Path.
+- Register a new Student with implicit profile creation.
+- Submit a Student Enrollment Request in a Course.
+- Cancel a Student Enrollment Request in a Course.
+- Confirm a Student Enrollment Request in a Course.
+- Reject a Student Enrollment Request in a Course.
+- Get all Enrollments for a Course.
+
+This context includes also an anti-corruption layer to communicate with the Profiles Context. The anticorruption layer is responsible for managing the communication between the Learning Context and the Profiles Context. It consumes the capabilities offered by the Profiles Context to:
+
+- Create the Profile of a new Student.
+- Get the Profile ID of a Student by Email.
+
 ### Reference Documentation
 
 For further reference, please consider the following sections:
