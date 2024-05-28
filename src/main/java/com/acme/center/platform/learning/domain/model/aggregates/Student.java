@@ -67,7 +67,13 @@ public class Student extends AuditableAbstractAggregateRoot<Student> {
         return this.profileId.profileId();
     }
 
+    public Integer getTotalCompletedCourses() {
+        return this.performanceMetricSet.totalCompletedCourses();
+    }
 
+    public Integer getTotalTutorials() {
+        return this.performanceMetricSet.totalTutorials();
+    }
 
 
 }
