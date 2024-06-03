@@ -14,7 +14,7 @@ ACME Learning Center Platform, illustrating development with Java, Spring Boot F
 - Domain-Driven Design
 
 ## Bounded Contexts
-This version of ACME Learning Center Platform is divided into two bounded contexts: Profiles, and Learning.
+This version of ACME Learning Center Platform is divided into three bounded contexts: Profiles, Learning, and IAM.
 
 ### Profiles Context
 
