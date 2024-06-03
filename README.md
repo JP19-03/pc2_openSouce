@@ -54,7 +54,7 @@ Tutorial is a concept that represents a learning resource. It is used to build t
 
 ### Identity and Access Management (IAM) Context
 
-The IAM Context is responsible for managing platform users, including the sign in and sign up processes. It applies JSON Web Token based authorization and Password hashing. It also adds a request authorization middleware to ASP.NET Core Pipeline, in order to validate included token in request header on endpoints that require authorization. Its capabilities include:
+The IAM Context is responsible for managing platform users, including the sign in and sign up processes. It applies JSON Web Token based authorization and Password hashing. It also adds a request authorization middleware to Spring Boot Pipeline, in order to validate included token in request header on endpoints that require authorization. Its capabilities include:
 - Create a new User (Sign Up).
 - Authenticate a User (Sign In).
 - Get a User by ID.
