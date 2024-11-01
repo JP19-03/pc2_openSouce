@@ -10,6 +10,13 @@ import org.springframework.stereotype.Service;
 import javax.management.relation.Role;
 import java.util.Arrays;
 
+/**
+ * Implementation of the GroupCommandService interface
+ * @summary
+ * This class is responsible for handling the SeedGroupsCommand command
+ * @author Johan Principe Godoy
+ * @version 1.0
+ */
 @Service
 public class GroupCommandServiceImpl implements GroupCommandService {
     private final GroupRepository groupRepository;
@@ -18,6 +25,7 @@ public class GroupCommandServiceImpl implements GroupCommandService {
         this.groupRepository = groupRepository;
     }
 
+    /** inheritedDoc */
     @Override
     public void handle(SeedGroupsCommand command) {
         Arrays.stream(Groups.values()).forEach(group -> {

@@ -10,6 +10,13 @@ import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
 
+/**
+ * Event handler for the application ready event.
+ * This event is triggered when the application is ready to serve requests.
+ * It is used to seed the groups in the database.
+ * @author Johan Principe Godoy u202014511
+ * @version 1.0
+ */
 @Service
 public class ApplicationReadyEventHandler {
     private final GroupCommandService groupCommandService;
@@ -19,6 +26,11 @@ public class ApplicationReadyEventHandler {
         this.groupCommandService = groupCommandService;
     }
 
+    /**
+     * Event listener for the application ready event.
+     * It seeds the groups in the database.
+     * @param event the application ready event
+     */
     @EventListener
     public void on(ApplicationReadyEvent event) {
         var applicationName = event.getApplicationContext().getId();

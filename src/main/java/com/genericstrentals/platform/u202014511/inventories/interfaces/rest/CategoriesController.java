@@ -31,6 +31,14 @@ public class CategoriesController {
         this.categoryCommandService = categoryCommandService;
     }
 
+    /**
+     * Create a new category
+     *
+     * @param resource the category resource
+     * @return the created category
+     * @see CreateCategoryResource
+     * @see CategoryResource
+     */
     @Operation(
             summary = "Create a new category",
             description = "Crate a new category with the give data"

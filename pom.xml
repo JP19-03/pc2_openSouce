@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.base</groupId>
-    <artifactId>platform</artifactId>
+    <artifactId>u202014511</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>base-platform</name>
     <description>base-platform</description>

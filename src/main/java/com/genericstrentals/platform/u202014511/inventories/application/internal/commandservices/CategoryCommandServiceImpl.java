@@ -11,6 +11,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+/**
+ * Implementation of the CategoryCommandService interface
+ * @summary
+ * This class is responsible for handling the CreateCategoryCommand command
+ * @author Johan Principe Godoy u202014511
+ * @version 1.0
+ */
 @Service
 public class CategoryCommandServiceImpl implements CategoryCommandService {
     private final CategoryRepository categoryRepository;
@@ -21,6 +28,7 @@ public class CategoryCommandServiceImpl implements CategoryCommandService {
         this.groupRepository = groupRepository;
     }
 
+    /** inheritedDoc */
     @Override
     public Optional<Category> handle(CreateCategoryCommand command) {
         if (categoryRepository.existsByName(command.name())) {
